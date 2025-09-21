@@ -6,7 +6,7 @@ import (
 	/*"strings"*/)
 
 func main() {
-	// 1. Define el contenido HTML
+	// 1. Define el contenido HTML AAAAAAAAAAAAAAAAAAAAA
 	htmlContent := "./static"
 	fileServer := http.FileServer(http.Dir(htmlContent))
 	// 2. Registra un manejador (handler) para la ruta raíz "/"
