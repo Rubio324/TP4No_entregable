@@ -6,58 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Preguntas de Estudio</title>
     <!-- Mapea con css-->
-    <link rel="stylesheet" href="/estilos.css">
+    <!--<link rel="stylesheet" href="/estilos.css">-->
 </head>
 <body>
-    <!--Centra el contenido en la página-->
-    <div class="container">
         <header>
             <h1>Generador de Preguntas de Estudio</h1> <!-- Título principal -->
-            <p class="description">Ingresa tus preguntas y respuestas para estudiar de manera eficiente</p>  <!-- subTítulo -->
+            <p class="description"> </p>  
         </header>
-        <!--Cada sección agrupa funcionalidades relacionadas-->
-        <section class="section">
-            <h2>Agregar Preguntas</h2> 
-            <form id="questionForm">
-                <div class="input-group"> <!--Contenedor para agrupar label + textarea-->
-                    <label for="question">Pregunta:</label>
-                    <textarea id="question" placeholder="Escribe tu pregunta aquí..." required></textarea>
-                </div>
-                <div class="input-group"> <!--Contenedor para agrupar label + textarea-->
-                    <label for="answer">Respuesta:</label> 
-                    <textarea id="answer" placeholder="Escribe la respuesta aquí..." required></textarea>
-                </div>
-                <button type="submit">Agregar Pregunta</button>
-            </form>
-        </section>
         
-        <section class="section">
-            <h2>Tus Preguntas</h2>
-            <div id="questionList" class="question-list">
-                <div class="no-questions" id="noQuestionsMessage">No hay preguntas agregadas todavía.</div>
-            </div>
-        </section>
-        
-        <section class="section study-section">
-            <h2>Modo Estudio</h2>
-            <div id="studyArea" class="hidden">
-                <div class="current-question">
-                    <div class="question-count" id="questionCount">Pregunta 1 de 0</div>
-                    <div id="currentQuestionText" class="question-text">No hay preguntas disponibles.</div>
-                    <div id="currentAnswerText" class="answer-text"></div>
-                </div>
-                <div class="controls">
-                    <button id="revealBtn" class="btn-accent">Revelar Respuesta</button>
-                    <button id="nextBtn">Siguiente Pregunta</button>
-                    <button id="resetBtn" class="btn-success">Reiniciar</button>
-                </div>
-            </div>
-            <div id="startStudyArea">
-                <button id="startStudyBtn" class="btn-success">Comenzar a Estudiar</button>
-            </div>
-        </section>
-    </div>
-    <!-- Enlace al archivo JavaScript externo -->
-    <script src="/script.js"></script>
 </body>
 </html>

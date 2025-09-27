@@ -1,0 +1,3 @@
+curl -I http://localhost:8080/ 
+go run .
+etc...
