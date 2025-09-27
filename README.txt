@@ -1,5 +1,3 @@
-
-
 generador-preguntas/
 ├── 📄 main.go                    # Punto de entrada del servidor Go
 ├── 🔧 iniciar_servidor.go        # Configuración y inicio del servidor

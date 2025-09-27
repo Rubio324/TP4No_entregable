@@ -6,13 +6,12 @@ import (
 	/*"strings"*/)
 
 func main() {
-	// 1. Define el contenido HTML
+	// Manejo automatico Content-Type para archivos estàticos
 	htmlContent := "./static"
 	fileServer := http.FileServer(http.Dir(htmlContent))
-	// 2. Registra un manejador (handler) para la ruta raíz "/"
+	// Registra un manejador (handler) para la ruta raíz "/"
 	http.Handle("/", fileServer)
 
-	// 5. Define el puerto y muestra un mensajew.Header().Set("Content-Type", "text/html; charset=utf-8")
+	// Define el puerto e inicia el servidor
 	iniciarServidor()
-
 }
