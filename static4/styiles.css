@@ -1,0 +1,76 @@
+
+/* styles.css - Práctica de Flexbox */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* CONTENEDOR FLEX */
+.flex-container {
+    display: flex; /* ⭐ Establece display flex */
+    flex-direction: row; /* ⭐ Valores: row | column */
+    justify-content: flex-start; /* ⭐ Valores: flex-start | center | space-between | space-around */
+    align-items: stretch; /* ⭐ Valores: stretch | center | flex-start */
+    gap: 10px; /* ⭐ Espaciado uniforme entre ítems */
+    
+    /* Estilos visuales para el contenedor */
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    min-height: 300px;
+    margin-bottom: 30px;
+}
+
+/* ÍTEMS FLEX */
+.flex-item {
+    /* Estilos base para los ítems */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border: 2px solid #2E7D32;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    
+    /* Para ver mejor el efecto de align-items */
+    min-width: 80px;
+}
+
+/* Colores diferentes para cada ítem */
+.flex-item:nth-child(1) { background-color: #FF6B6B; border-color: #C62828; }
+.flex-item:nth-child(2) { background-color: #4ECDC4; border-color: #00838F; }
+.flex-item:nth-child(3) { background-color: #FFD166; border-color: #F9A825; }
+.flex-item:nth-child(4) { background-color: #6A0572; border-color: #4A148C; }
+.flex-item:nth-child(5) { background-color: #118AB2; border-color: #00695C; }
+
+/* Controles para experimentar */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.controls button:hover {
+    background-color: #555;
+}

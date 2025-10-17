@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Flexbox Layout</title>
+    <link rel="stylesheet" href="styiles.css">
+</head>
+<body>
+    <h1>Práctica de Flexbox</h1>
+    
+    <!-- Contenedor flex -->
+    <div class="flex-container">
+        <!-- Cinco divs hijos -->
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+    </div>
+
+    <div class="controls">
+        <button onclick="cambiarFlexDirection('row')">fila: row</button>
+        <button onclick="cambiarFlexDirection('column')">columna: column</button>
+
+        <button onclick="cambiarJustifyContent('flex-start')">inicio: flex-start</button>
+        <button onclick="cambiarJustifyContent('center')">centro: center</button>
+        <button onclick="cambiarJustifyContent('space-between')">con espacios: space-between</button>
+        <button onclick="cambiarJustifyContent('space-around')">con menos espacios: space-around</button>
+
+        <button onclick="cambiarAlignItems('stretch')">estrecho: stretch</button>
+        <button onclick="cambiarAlignItems('center')">centro: center</button>
+        <button onclick="cambiarAlignItems('flex-start')">arriba: flex-start</button>
+    </div>
+
+    <script>
+        const container = document.querySelector('.flex-container');
+        
+        function cambiarFlexDirection(direction) { // -LA DIRECCIÓN
+            container.style.flexDirection = direction;
+        }
+        
+        function cambiarJustifyContent(justify) { // - ALINEACIÓN EN EL EJE PRINCIPAL
+            container.style.justifyContent = justify;
+        }
+        
+        function cambiarAlignItems(align) { //  - ALINEACIÓN EN EL EJE TRANSVERSAL
+            container.style.alignItems = align;
+        }
+    </script>
+</body>
+</html>
