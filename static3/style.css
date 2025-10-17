@@ -1,0 +1,48 @@
+
+/* styles.css - Estilos para el ejercicio del Box Model */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la clase .caja */
+.caja {
+    width: 300px;              /* Ancho fijo de 300px */
+    padding: 15px;             /* Espacio interno de 15px */
+    border: 2px solid black;   /* Borde sólido negro de 2px */
+    margin: 20px;              /* Margen externo de 20px */
+}
+
+/* Colores de fondo diferentes para cada caja usando :nth-child() */
+.caja:nth-child(1) {
+    background-color: #ffcccc; /* Rojo claro */
+}
+
+.caja:nth-child(2) {
+    background-color: #ccffcc; /* Verde claro */
+}
+
+.caja:nth-child(3) {
+    background-color: #ccccff; /* Azul claro */
+}
+
+/* Estilos para los títulos y párrafos dentro de las cajas */
+.caja h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.caja p {
+    color: #666;
+    line-height: 1.5;
+}

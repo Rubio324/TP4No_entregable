@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// Manejo automatico Content-Type para archivos estàticos
-	htmlContent := "./static2"
+	htmlContent := "./static3"
 	fileServer := http.FileServer(http.Dir(htmlContent))
 	// Registra un manejador (handler) para la ruta raíz "/"
 	http.Handle("/", fileServer)
