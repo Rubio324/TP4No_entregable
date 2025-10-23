@@ -1,0 +1,75 @@
+/* Estilos básicos de reset */
+* {    /* * selecciona todos los elementos de la pagina*/
+    margin: 0;      /*eliminan los espacios por defecto que tienen los elementos*/
+    padding: 0;    /*idem*/
+    box-sizing: border-box; /*hace que el padding y border se incluyan dentro del ancho/alto del elemento (más fácil de calcular)*/
+}
+
+body {
+    font-family: Arial, sans-serif; /*letra*/
+    padding: 20px; /* crea espacio alrededor de todo el contenido*/
+    background-color: #f0f0f0; /*fondo gris claro*/
+}
+
+/* Contenedor principal del grid */
+.grid-container {
+    display: grid; /* -------- Activa CSS Grid en este contenedor*/
+    gap: 10px;  /* → Espacio de 10px entre todos los elementos del grid*/
+    height: 80vh; /* → Ocupa el 80% del alto de la pantalla*/
+    
+    /* Definimos 2 columnas y 3 filas */
+    grid-template-columns: 1fr 3fr 2fr;  /* sidebar | Main Content */
+    grid-template-rows: auto 1fr auto;  /* header | Main Content | footer */
+}
+
+/* Estilos comunes para todos los elementos del grid */
+.header, .sidebar, .content, .footer ,.footer222, .foouter333{
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Posicionamos cada elemento en el grid */
+ 
+    /* 
+    EXPLICACIÓN DE LAS LÍNEAS DEL GRID:
+    
+    COLUMNAS: 2 columnas = 3 líneas de columnas
+    Línea 1 │ Columna 1 │ Línea 2 │ Columna 2 │ Línea 3
+    
+    FILAS: 3 filas = 4 líneas de filas  
+    Línea 1 │ Fila 1 │ Línea 2 │ Fila 2 │ Línea 3 │ Fila 3 │ Línea 4
+    */
+
+
+header {
+    background-color: #3498db;
+    grid-column: 1 / 2;  /* desde LÍNEA 1 hasta LÍNEA 2 de columnas = Columna 1 */
+    grid-row: 2 / 3;     /* desde LÍNEA 2 hasta LÍNEA 3 de filas = Fila 2 */
+}
+
+/* Sidebar - columna 1, fila 1 */
+.sidebar {
+    background-color: #2ecc71;
+    grid-column: 1 / 2;  /* desde LÍNEA 1 hasta LÍNEA 2 de columnas = Columna 1 */
+    grid-row: 1 / 2;     /* desde LÍNEA 1 hasta LÍNEA 2 de filas = Fila 1 */
+}
+
+/* Content - columna 2, fila 2 */
+.content {
+    background-color: #e74c3c;
+    grid-column: 2 / 6;  /* desde LÍNEA 2 hasta LÍNEA 3 de columnas = Columna 2 */
+    grid-row: 2 / 3;     /* desde LÍNEA 2 hasta LÍNEA 3 de filas = Fila 2 */
+}
+
+/* Footer - ocupa toda la tercera fila */
+.footer {
+    background-color: #f39c12;
+    grid-column: 1 / 6;  /* desde LÍNEA 1 hasta LÍNEA 3 de columnas = Columnas 1 Y 2 */
+    grid-row: 3 / 4;     /* desde LÍNEA 3 hasta LÍNEA 4 de filas = Fila 3 */
+}
+
